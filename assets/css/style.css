@@ -46,10 +46,15 @@ section {
     padding-right: 12px;
 }
 
-.col-3 {
-    width: 25%;
-    padding-left: 12px;
-    padding-right: 12px;
+.menu-icon-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    align-items: center;
 }
 
 .position-relative {
@@ -96,6 +101,10 @@ section {
     width: 100%;
 }
 
+.padding-top-60{
+    padding-top: 60px;
+}
+
 .py-20 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -112,12 +121,13 @@ section {
 
 /******* section-1 *******/
 .bg-image {
-    background-image: url("/assets/image/image-1.png");
+    background-image: url("/assets/image/header-bg-img.png");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
     position: relative;
     top: 0;
+    border-bottom-left-radius: 200px;
 }
 
 .cross {
@@ -161,6 +171,7 @@ section {
     text-align: left;
     color: #ffffff;
     margin-bottom: 16px;
+    margin-top: 150px;
 }
 
 .main-heading-focus {
@@ -190,6 +201,9 @@ section {
     line-height: 17.6px;
     text-align: left;
     color: #7f8b8f;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .compare-btn {
@@ -299,6 +313,17 @@ section {
 
 .gap-51 {
     gap: 51px;
+}
+
+.logo-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo-1 {
+    max-width: 100px;
+    height: auto;
 }
 
 .logo-item {
@@ -512,6 +537,16 @@ section {
         font-size: 38px;
         line-height: 40px;
     }
+
+    .simple {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .main-heading {
+        font-size: 45px;
+        line-height: 55px;
+    }
 }
 
 @media (max-width:991.98px) {
@@ -583,12 +618,6 @@ section {
         text-align: center;
     }
 
-    .main-heading {
-        text-align: center;
-        font-size: 50px;
-        line-height: 55px;
-    }
-
     .mb-22 {
         margin-bottom: 22px;
     }
@@ -599,13 +628,38 @@ section {
 
     .end {
         color: #ffffff;
-        text-align: center;
+    }
+
+    .bg-image {
+        border-radius: 0px;
+    }
+
+    .main-heading {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .gap-51 {
+        gap: 20px;
+    }
+
+    .mt-203 {
+        margin-top: 50px;
+    }
+
+    .mb-162 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-1 {
+        max-width: 80px;
     }
 }
 
 @media (min-width:992px) {
-
-
     .paragraph {
         max-width: 506px;
         margin-bottom: 42px;
@@ -651,10 +705,6 @@ section {
 }
 
 @media (min-width:1200px) {
-    .bg-image {
-        border-bottom-left-radius: 100px;
-    }
-
     .input {
         max-width: 476px;
     }
@@ -669,10 +719,6 @@ section {
 }
 
 @media (min-width:1400px) {
-    .bg-image {
-        border-bottom-left-radius: 200px;
-    }
-
     .circle-img {
         right: -11.6%;
     }
