@@ -101,7 +101,7 @@ section {
     width: 100%;
 }
 
-.padding-top-60{
+.padding-top-60 {
     padding-top: 60px;
 }
 
@@ -343,9 +343,9 @@ section {
     margin-top: 203px;
 }
 
-.mt-30 {
+/* .mt-30 {
     margin-top: 120px;
-}
+} */
 
 .mb-162 {
     margin-bottom: 162px;
@@ -499,13 +499,98 @@ section {
 .card-description {
     font-family: Helvetica;
     font-size: 16px;
-    font-weight: 400;
     line-height: 25.6px;
     text-align: left;
     max-width: 286px;
     color: #ffffff;
 }
 
+/******* section-4 *******/
+.heading-2 {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+}
+
+.accordion {
+    width: 558px;
+}
+
+.pt-46 {
+    padding-top: 46px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+details {
+    border: 1px solid #00000014;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+details[open] {
+    box-shadow: 0px 0px 13.9px 0px #0000001A;
+}
+
+.svg {
+    margin-right: 14px;
+}
+
+.img {
+    padding-left: 14px;
+}
+
+details[open] .svg {
+    transform: rotate(180deg);
+}
+
+.comparisons {
+    font-weight: 700;
+}
+
+.head-2 {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    color: #00171F;
+    padding-left: 24px;
+    opacity: 90%;
+}
+
+.Group-image {
+    margin-left: 50px;
+}
+
+.para-3 {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 25.6px;
+    text-align: left;
+    color: #00171F;
+    opacity: 90%;
+    padding-left: 102px;
+}
+
+/******* section-5 *******/
+.head-3 {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+}
 
 @media (min-width:992px) {
     .col-sm-6 {
@@ -546,6 +631,11 @@ section {
     .main-heading {
         font-size: 45px;
         line-height: 55px;
+    }
+
+    .heading-2 {
+        font-size: 40px;
+        line-height: 45px;
     }
 }
 
@@ -637,6 +727,11 @@ section {
     .main-heading {
         margin-top: 0;
     }
+
+    .Group-image {
+        margin-top: 30px;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -714,7 +809,7 @@ section {
     }
 
     .end {
-        transform: translateY(280px);
+        transform: translateY(255px);
     }
 }
 
